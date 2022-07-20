@@ -1,0 +1,62 @@
+/*........
+google-font
+............ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*...........
+common-styles
+.............*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*...................
+live watch part sytles
+...................... */
+.watch-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #161616;
+    border-radius: 30px;
+    margin-left: 151px;
+    margin-right: 128px;
+    margin-top: 50px;
+    margin-bottom: 132px;
+}
+.watch-live{
+    margin-top: 91px;
+    margin-left: 67px;
+}
+.section-title{
+    color: #FFFFFF;
+    
+}
+.watch-live p{
+    color: #FFFFFF; 
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.watch-live a{
+    text-decoration: none;
+    background: #DD0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+/* Media-Quriye */
+
+/* Mobile Device */
+@media screen and (max-width:688px) {
+    .watch-container{
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+    }
+    .watch-live p{
+        color: #FFFFFF; 
+        font-size: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 50%
+    }
+}
