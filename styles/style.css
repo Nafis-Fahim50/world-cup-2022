@@ -71,6 +71,11 @@ li a:hover:not(.active) {
     margin-left: 40px;
     margin-bottom: 173px;
 }
+
+/*.........
+blog styles
+............
+ */
 .blog-container{
     margin-left: 50px;
     margin-right: 128px;
@@ -105,9 +110,9 @@ button a{
 .blog-info .fa-message {
     margin-left: 80px;
 }
-/* 
+/*..........
 Footer Sytles
- */
+............. */
  footer{
     background: #161616;
     height: 401px;
@@ -132,10 +137,13 @@ hr{
     margin: 20px;
     color: #B9B9B9;
 }
-
+.nav-bar{
+    display: inline-block;
+}
 /* ..............
 2nd website styles
 ..................*/
+
 /* .nav-bar{
     margin-left: 20px;
 } */
@@ -164,13 +172,17 @@ hr{
     text-align: center;
 }
 
-/* Media-Quriye */
+/*..........
+Media queries
+.............*/
 
-/* Mobile Device */
-@media screen and (max-width:688px) {
+/*...........
+Mobile Device 
+.............*/
+@media screen and (max-width:767px) {
     .watch-container{
-    width: 100%;
-    grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
     }
     .watch-live p{
         color: #FFFFFF; 
@@ -180,11 +192,59 @@ hr{
         overflow: hidden;
         width: 50%
     }
-    blog-container{
+    .nav-bar{
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    .nav-blog-container{
+        display: block;
+        width: 100%;
+    }
+    .blog-container{
         grid-template-columns: repeat(1,1fr);
     }
     .blogs{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
+    footer{
+        height: 470px;
+     }
+    .upcoming-match{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/*...........
+Tablet device or ipad
+ .............*/
+ @media screen and (min-width:768px) and (max-width:1023px) {
+    .watch-container{
+        margin-left: 90px;
+        margin-right: 100px;
+        padding-bottom: 50px;
+        }
+    .watch-live p{
+        font-size: 10px;
+    }
+    .nav-bar ul {
+        list-style-type: none;
+        margin-bottom: 80px;
+
+    }
+    .nav-blog-container{
+        margin-left: 30px;
+        display: inline;
+    }
+    .blog-container{
+        margin-left: 30px;
+        margin-right: 100px;
+        column-gap: 10px;
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 19px;
+    } 
+    .upcoming-match{
+        grid-template-columns: repeat(2,1fr);
+    }     
 }
